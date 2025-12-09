@@ -1,0 +1,477 @@
+main{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.whatsapp-button{
+    position: fixed;
+    bottom: 1.4rem;
+    right: 1.2rem;
+    z-index: 50;
+    transition: all 0.3s ease 0s;
+}
+
+.whatsapp-button:hover{
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.whatsapp-button img{
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.hero{
+    min-height: 98vh;
+    background: url('../../images/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
+
+.hero .left-bubble{
+    position: absolute;
+    bottom: -550px;
+    left: -450px;
+    width: 1150px;
+    height: 1150px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: var(--gray-color);
+    box-shadow: 3px 2px 8px rgba(0,0,0,0.2);
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45rem;
+    height: 30rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    z-index: 10;
+}
+
+.hero-container .container-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero-title{
+    font-size: 5.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    text-align: left;
+    color: var(--white-color);
+    letter-spacing: 2.4px;
+}
+
+.hero-subtitle{
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.hero-container .cat-buttons{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+}
+
+.cat-buttons .cat-btn{
+    padding: 0.5rem 1.8rem;
+    width: 16rem;
+    border-radius: 18px;
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    background-color: var(--dark-gray);
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.2);
+    color: var(--white-color);
+}
+
+.cat-btn.transparent{
+    color: var(--deep-gray);
+    border: 2px solid var(--deep-gray);
+    background-color: #9ba9a8;
+}
+
+/* --------- benefits --------- */
+
+.benefits{
+    background-color: var(--dark-gray);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.benefits .section-title{
+    width: 70%;
+    text-align: center;
+    color: var(--clear-white);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.benefits .section-title .whiter{
+    color: var(--white-color);
+    font-size: 3.4rem;
+}
+
+.benefits .benefits-container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.benefits-container .benefit{
+    background-color: var(--clear-white);
+    border-radius: 12px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+    width: 22rem;
+    height: 25rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.benefit .benefit-image-container{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.benefit .benefit-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benefit .benefit-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-top: 0.8rem;
+}
+
+.benefit .benefit-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--deep-gray);
+}
+
+.benefit-button{
+    margin-top: auto;
+    margin-left: auto;
+    padding: 0.4rem 1rem;
+    background-color: var(--deep-gray);
+    color: var(--white-color);
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* --------- cursos --------- */
+
+.courses{
+    background-color: var(--gray-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.courses .section-title{
+    width: 90%;
+    font-size: 2.8rem;
+    text-align: left;
+    color: var(--white-color);
+}
+
+.courses .courses-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    row-gap: 3rem;
+}
+
+.courses-container .course-box{
+    width: 45%;
+    height: 20rem;
+    background-color: #e7e5e5;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    gap: 1rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.course-box .course-time{
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 18px;
+    background-color: var(--deep-gray);
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-box .box-image-container{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 2px 1px 7px rgba(0,0,0,0.3);
+}
+
+.box-image-container .box-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-box .box-content{
+    flex: 1.4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.box-content .nombre-curso{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--black-color);
+    margin-bottom: 0.5rem;
+}
+
+.box-content .prices{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--deep-gray);
+    margin-bottom: 0.8rem;
+}
+
+.prices .price{
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.box-content .course-data{
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--black-color);
+}
+
+/* --------- contact --------- */
+
+.contact{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    background-color: transparent;
+}
+
+.contact .contact-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    height: 20rem;
+}
+
+.contact .left-content{
+    flex: 0.5;
+    padding: 1rem;
+    padding-right: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5)
+}
+
+.contact-title{
+    width: 100%;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--black-color);
+    padding: 0 2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.left-content .info-group{
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.info-group .info-title{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.info-group .info-description{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #202020;
+}
+
+.info-description.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact .middle-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.middle-content .middle-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--black-color);
+    margin-bottom: 0.7rem;
+}
+
+.middle-content .middle-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #202020;
+}
+
+.middle-description .bold-text{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.07rem;
+}
+
+.middle-content .benefit-button{
+    margin-bottom: 1.8rem;
+    margin-left: 0;
+}
+
+.contact .right-content{
+    flex: 1;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 1px 7px rgba(0,0,0,0.3);
+    border: 2px solid var(--deep-gray);
+}
+
+.right-content iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------- call-to-action --------- */
+
+.call-to-action{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    box-shadow: 3px 2px 8px rgba(0,0,0,0.2);
+    padding: 2rem 1.5rem;
+}
+
+.call-to-action .cta-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--black-color);
+    margin-bottom: 0.8rem;
+}
+
+.call-to-action .cta-text{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #123037;
+    margin-bottom: 1.1rem;
+}
+
+.call-to-action .cta-button{
+    padding: 0.4rem 1.4rem;
+    width: 14rem;
+    border-radius: 18px;
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    background-color: var(--deep-gray);
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.2);
+    color: var(--white-color);
+}
