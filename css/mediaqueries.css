@@ -256,7 +256,7 @@
     }
     .open-sidebar-button{
         position: absolute;
-        top: 1rem;
+        top: 2rem;
         right: 1rem;
         z-index: 100;
         background-color: #fff;
@@ -429,12 +429,16 @@
         right: 15.5rem;
     }
     .hero{
-        height: 98vh;
-        background: url('../images/hero-image.png');
-        background-size: cover;
-        background-position: 750px 1950px;
         align-items: center;
         justify-content: center;
+    }
+    .hero .hero-bg-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-position: -350px -90px;
+        object-fit: cover;
+        z-index: 0;
     }
     .hero .left-bubble{
         bottom: -125px;

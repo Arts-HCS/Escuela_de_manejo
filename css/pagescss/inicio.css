@@ -26,13 +26,19 @@ main{
 }
 
 .hero{
-    height: 98vh;
-    background: url('../../images/hero-image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 98vh;
     align-items: flex-end;
     display: flex;
+}
+
+.hero .hero-bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .hero .left-bubble{
@@ -54,7 +60,7 @@ main{
     width: 45rem;
     height: fit-content;
     margin-left: 2rem;
-    margin-bottom: 1.5rem;
+
     z-index: 10;
     align-self: flex-end;
     justify-self: flex-end;
