@@ -2,6 +2,7 @@ main{
     position: relative;
     width: 100%;
     height: fit-content;
+    overflow: hidden;
 }
 
 .whatsapp-button{
@@ -25,12 +26,13 @@ main{
 }
 
 .hero{
-    min-height: 98vh;
+    height: 98vh;
     background: url('../../images/hero-image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-items: flex-end;
+    display: flex;
 }
 
 .hero .left-bubble{
@@ -50,10 +52,12 @@ main{
     flex-direction: column;
     align-items: center;
     width: 45rem;
-    height: 30rem;
+    height: fit-content;
     margin-left: 2rem;
     margin-bottom: 1.5rem;
     z-index: 10;
+    align-self: flex-end;
+    justify-self: flex-end;
 }
 
 .hero-container .container-header{
@@ -66,7 +70,7 @@ main{
 }
 
 .hero-title{
-    font-size: 5.2rem;
+    font-size: 4.8rem;
     line-height: 1.1;
     font-weight: 700;
     text-align: left;
@@ -75,7 +79,7 @@ main{
 }
 
 .hero-subtitle{
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: left;
     font-weight: 600;
     color: var(--white-color);
@@ -87,11 +91,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1.2rem;
+    gap: 1.4rem;
+    margin-bottom: 3rem;
 }
 
 .cat-buttons .cat-btn{
-    padding: 0.5rem 1.8rem;
+    padding: 0.4rem 1.7rem;
     width: 16rem;
     border-radius: 18px;
     display: flex;
@@ -106,10 +111,21 @@ main{
     color: var(--white-color);
 }
 
+.cat-btn:hover{
+    box-shadow: 0px 0px 0px 8px #173d466e;
+    transform: scale(1.05);
+    background-color: var(--deep-gray);
+}
+
 .cat-btn.transparent{
     color: var(--deep-gray);
     border: 2px solid var(--deep-gray);
     background-color: #9ba9a8;
+}
+
+.cat-btn.transparent:hover{
+    background-color: #c3caca;
+    box-shadow: 0px 0px 0px 8px #d0dde054;
 }
 
 /* --------- benefits --------- */
@@ -177,7 +193,6 @@ main{
 .benefit .benefit-title{
     font-size: 1.3rem;
     font-weight: 600;
-    margin-top: 1rem;
     margin-top: 0.8rem;
 }
 
@@ -197,6 +212,11 @@ main{
     border-radius: 8px;
     font-weight: 500;
     transition: all 0.3s ease;
+}
+
+.benefit-button:hover{
+    box-shadow: 0px 0px 0px 6px #173d466e;
+    transform: scale(1.05);
 }
 
 /* --------- cursos --------- */
@@ -311,6 +331,7 @@ main{
     font-size: 1rem;
     text-align: left;
     color: var(--black-color);
+    height: 100%;
 }
 
 /* --------- contact --------- */
@@ -360,6 +381,7 @@ main{
 .left-content .info-group{
     margin-bottom: 1.2rem;
     width: 100%;
+    text-align: left;
 }
 
 .info-group .info-title{
@@ -375,6 +397,7 @@ main{
     font-size: 1rem;
     font-weight: 400;
     color: #202020;
+    text-align: left;
 }
 
 .info-description.list{
@@ -474,4 +497,9 @@ main{
     background-color: var(--deep-gray);
     box-shadow: 2px 3px 8px rgba(0,0,0,0.2);
     color: var(--white-color);
+}
+
+.cta-button:hover{
+    box-shadow: 0px 0px 0px 6px #173d466e;
+    transform: scale(1.05);
 }

@@ -9,7 +9,7 @@
 :root{
     --white-color: #FBFBFB;
     --clear-white: #f1f1f1;
-    --deep-gray: #173D46;
+    --deep-gray: #173d46;
     --dark-gray: #3E4D4E;
     --gray-color: #829291;
     --black-color: #171717;
@@ -77,6 +77,17 @@ ul, ol {
 
 /* -------------- Components -------------- */
 
+/* -------------- header 1800px -------------- */
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+    cursor: pointer;
+}
+
+
 /* -------------- header -------------- */
 
 .header{
@@ -93,6 +104,7 @@ ul, ol {
     left: 0;
 }
 
+
 .header .navbar{
     width: 100%;
     height: fit-content;
@@ -103,7 +115,62 @@ ul, ol {
 
 .navbar .nav{
     gap: 1rem;
+    transition: all 0.3s ease 0s;
 }
+
+.nav.scrolled{
+    margin-top: 0.8rem;
+    background: rgba(16, 16, 16, 0.6);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.2);
+    gap: 2rem;
+}
+
+.nav.nav-right.scrolled{
+    background: rgba(16, 16, 16, 0.6);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nav .header-link.scrolled{
+    box-shadow: none;
+    border-radius: 18px;
+    padding: 0;
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+}
+
+.nav .header-link.scrolled:hover{
+    box-shadow: none;
+    color: #ffffff;
+    transform: none;
+    background-color: rgba(0, 0, 0, 0.538);
+}
+
+.nav .header-link.darker.scrolled{
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.nav .header-link.darker.scrolled:hover{
+    box-shadow: none;
+    color: #ffffff;
+    transform: none;
+    background-color: rgb(19, 64, 72)
+}
+
+.navbar .logo-container.scrolled{
+    width: 30px;
+    transform: translateY(-150%);
+    margin: 0;
+}
+
 .navbar .logo-container{
     align-self: center;
     height: fit-content;
@@ -125,19 +192,53 @@ ul, ol {
 }
 
 .nav .header-link{
-    padding: 0.5rem 2rem;
+    padding: 0.35rem 2rem;
     border-radius: 18px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease 0s;
     font-weight: 600;
     font-size: 1.1rem;
     background-color: var(--gray-color);
     color: var(--white-color);
     text-transform: uppercase;
     box-shadow: 2px 3px 6px rgba(0,0,0,0.2);
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+}
+
+.nav .header-link.scrolled::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    right: 20px;
+    transform: scale(0);
+    height: 2px;
+    background-color: #f1f1f1;
+    transition: all 0.3s ease 0s;
+    transform-origin: center;
+}
+
+.nav .header-link.scrolled:hover::after{
+    transform: scale(1);
+}
+
+.nav .header-link:hover{
+    background-color: rgba(228, 232, 236, 0.879);
+    transform: translateY(-5px);
+    color: #3e4d4eda;
+    box-shadow: 0px 0px 0px 10px rgba(222, 230, 241, 0.238);
 }
 
 .nav .header-link.darker{
-    background-color: var(--deep-gray);
+    background-color: #173D46;
+}
+
+.nav .header-link.darker:hover{
+    background-color: #103c46da;
+    box-shadow: 0 0 0 10px #173d464e;
+    color: var(--white-color);
 }
 
 .header .social_media-container{
@@ -156,11 +257,25 @@ ul, ol {
     background-color: var(--dark-gray);
     gap: 5px;
     box-shadow: 2px 3px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease 0s;
+}
+
+.social_media-container.scrolled{
+    background-color: var(--white-color);
 }
 
 .social_media-container .social_media-link{
     color: var(--white-color);
     font-size: 1.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.social_media-container.scrolled .social_media-link{
+    color: var(--dark-gray);
+}
+
+.social_media-container .social_media-link:hover{
+    color: var(--gray-color);
 }
 
 /* -------------- footer -------------- */
@@ -176,6 +291,7 @@ ul, ol {
     justify-content: center;
     background-color: #232323;
     color: var(--white-color);
+    position: relative;
 }
 
 .footer .footer-content{
@@ -236,4 +352,9 @@ ul, ol {
     margin-top: 0.5rem;
     font-weight: 300;
     text-align: center;
+}
+
+.footer .footer-copyright .creator{
+    margin-left: 5px;
+    display: block;
 }

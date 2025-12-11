@@ -12,11 +12,19 @@
 
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/pagescss/inicio.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+    <script defer src="./js/script.js"></script>
 
 </head>
 <body>
     <header class="header">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="sidebar-active">
+        <label id="overlay" for="sidebar-active"></label>
         <nav class="navbar">
+            
             <ul class="nav nav-left">
                 <li><a class="header-link" href="">Inicio</a></li>
                 <li><a class="header-link" href="">Cursos</a></li>
@@ -28,6 +36,9 @@
             <ul class="nav nav-right">
                 <li><a class="header-link" href="">Sobre nosotros</a></li>
                 <li><a class="header-link darker" href="">Contacto</a></li>
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
             </ul>
         </nav>
         <div class="social_media-container">
@@ -60,7 +71,7 @@
             </div>
         </section>
         <section class="section benefits">
-            <h2 class="section-title">Los <span class="whiter">beneficios </span>de aprender con nosotros</h2>
+            <h2 class="section-title">¿Por qué nosotros?</h2>
             <div class="benefits-container">
                 <div class="benefit">
                     <figure class="benefit-image-container">
@@ -199,14 +210,14 @@
             </div>
         </section>
         <section class="section call-to-action">
-            <h2 class="cta-title">Diviértete aprendiendo, sin miedo</h2>
+            <h2 class="cta-title">Diviértete aprendiendo, ¡sin miedo!</h2>
             <p class="cta-text">El tipo de escuela que estabas buscando</p>
             <a class="cta-button" href="#">Agenda tu clase</a>
         </section>
     </main>
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-content-box">
+            <div class="footer-content-box bigger-box">
                 <h4>Horarios de oficina</h4>
                 <ul class="list">
                     <li>Lunes a Viernes: 8:00 am - 6:00 pm</li>
@@ -220,7 +231,7 @@
                     <li>55 4728 1234</li>
                 </ul>
             </div>     
-            <div class="footer-content-box">
+            <div class="footer-content-box bigger-box">
                 <h4>Dirección</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>     
@@ -234,7 +245,7 @@
             </div>
 
         </div>
-        <p class="footer-copyright">Escuela de Manejo &copy; 2025 All rights reserved. <span class="creator">By Arturo.</span></p>
+        <p class="footer-copyright">Escuela de Manejo &copy; 2025 All rights reserved.  <span class="creator"> By Arturo.</span></p>
 
     </footer>
     
