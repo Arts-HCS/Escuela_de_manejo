@@ -260,7 +260,7 @@
     }
     .open-sidebar-button{
         position: absolute;
-        top: 2rem;
+        top: 0;
         right: 1rem;
         z-index: 100;
         background-color: #fff;
