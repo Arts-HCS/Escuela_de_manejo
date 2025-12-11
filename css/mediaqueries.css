@@ -203,7 +203,8 @@
 
 @media screen and (max-width: 775px){
     .header{
-        height: 40rem;
+        height: 10rem;
+        margin-top: 2rem;
     }
     .header .navbar{
         flex-direction: column;
@@ -259,7 +260,7 @@
     }
     .open-sidebar-button{
         position: absolute;
-        top: 2.5rem;
+        top: 2rem;
         right: 1rem;
         z-index: 100;
         background-color: #fff;
@@ -712,11 +713,5 @@
         align-items: center;
         justify-content: center;
         line-height: 1.1;
-    }
-}
-
-@media screen and (max-height: 670px){
-    .hero-container{
-        margin-bottom: 2rem;
     }
 }
