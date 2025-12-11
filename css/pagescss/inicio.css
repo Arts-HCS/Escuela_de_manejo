@@ -26,7 +26,7 @@ main{
 }
 
 .hero{
-    min-height: 98vh;
+    min-height: 98dvh;
     align-items: flex-end;
     display: flex;
 }
